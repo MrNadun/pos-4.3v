@@ -117,9 +117,6 @@ function detectIntent(text) {
   if (/^(hi|hello|hey|helo|ayubowan|kohomada|hari|machan\s*|ආයුබෝවන්)\b/.test(q))
     return "greet";
 
-  if (/^(|suba udasanak|gm|good morning)\b/.test(q))
-    return "msg";
-
   if (/\b(order|ordara|orderak|tracking|invoice|bill|delivery|mage.*(order|bill|invoice)|my.*(order|bill|invoice)|order.*status|status.*order)\b/.test(q))
     return "order_status";
 
@@ -234,7 +231,6 @@ function buildLocalReply(text, user) {
 
   switch (intent) {
     case "greet":        return `👋 Welcome to *${cfg.businessName}*!\n\nMata price, stock, recommendations, order status check karanna puluwan. Mokakda oni? 😊`;
-    case "msg":        return `GOOD MORNING!`;
     case "price":        return replyPrice(text, sym);
     case "stock":        return replyStock(text, sym);
     case "recommend":    return replyRecommend(text, sym);
