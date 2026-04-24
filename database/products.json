@@ -1,0 +1,83 @@
+[
+  {
+    "id": "id_9hfm6ll",
+    "sku": "ITEM0001",
+    "name": "i5 4th gen cpu",
+    "category": "Accessories",
+    "price": 1300,
+    "stock": 6,
+    "code": "ITEM0001"
+  },
+  {
+    "id": "id_30yxonb",
+    "sku": "ITEM0002",
+    "name": "i3 2nd gen cpu",
+    "category": "Accessories",
+    "price": 1500,
+    "stock": 9,
+    "code": "ITEM0002"
+  },
+  {
+    "id": "id_pbctina",
+    "sku": "ITEM0003",
+    "name": "4GB RAM DDR4",
+    "category": "Electronics",
+    "price": 2000,
+    "stock": 4,
+    "code": "ITEM0003"
+  },
+  {
+    "id": "id_33gki95",
+    "sku": "ITEM0004",
+    "name": "4GB RAM DDR3",
+    "category": "Electronics",
+    "price": 1500,
+    "stock": 2,
+    "code": "ITEM0004"
+  },
+  {
+    "id": "id_x2wymge",
+    "sku": "ITEM0005",
+    "name": "CMOS BATTERY",
+    "category": "General",
+    "price": 150,
+    "stock": 88,
+    "code": "ITEM0005"
+  },
+  {
+    "id": "id_ghtd27k",
+    "sku": "ITEM0006",
+    "name": "1TB HARD DISK",
+    "category": "Accessories",
+    "price": 10300,
+    "stock": 19,
+    "code": "ITEM0006"
+  },
+  {
+    "id": "id_0pulbdl",
+    "sku": "ITEM0007",
+    "name": "500GB HARD DISK",
+    "category": "Accessories",
+    "price": 9400,
+    "stock": 19,
+    "code": "ITEM0007"
+  },
+  {
+    "id": "id_pgq5dta",
+    "sku": "ITEM0008",
+    "name": "WINDOWS 10 INSTALLED",
+    "price": 1000,
+    "stock": 996,
+    "category": "Software",
+    "code": "ITEM0008"
+  },
+  {
+    "id": "id_3bbc4sd",
+    "sku": "ITEM0009",
+    "name": "WINDOWS 11 INSTALLED",
+    "price": 1500,
+    "stock": 98,
+    "category": "Software",
+    "code": "ITEM0009"
+  }
+]

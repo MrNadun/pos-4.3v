@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: sd-pos
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PUPPETEER_EXECUTABLE_PATH
+        value: /usr/bin/chromium
+      # Optional persistent disk so JSON DB and WhatsApp session survive deploys.
+      # Free plans on Render do NOT support disks — upgrade or accept data loss.
+    disk:
+      name: sd-pos-data
+      mountPath: /app/data
+      sizeGB: 1

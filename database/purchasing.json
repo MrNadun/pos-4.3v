@@ -1,0 +1,120 @@
+[
+  {
+    "id": "PO_1775386298990",
+    "date": "2026-04-05T00:00:00.000Z",
+    "supplier": "BuyMore",
+    "ref": "",
+    "payment": "cash",
+    "notes": "",
+    "items": [
+      {
+        "id": "id_9hfm6ll",
+        "sku": "ITEM0001",
+        "name": "i5 4th gen cpu",
+        "qty": 14,
+        "costPrice": 1200,
+        "retailPrice": 1300,
+        "supplierSerial": "",
+        "isNewProduct": true
+      },
+      {
+        "id": "id_30yxonb",
+        "sku": "ITEM0002",
+        "name": "i3 2nd gen cpu",
+        "qty": 14,
+        "costPrice": 1000,
+        "retailPrice": 1500,
+        "supplierSerial": "",
+        "isNewProduct": true
+      }
+    ],
+    "totalCost": 30800,
+    "status": "completed"
+  },
+  {
+    "id": "PO_1775617907559",
+    "date": "2026-04-08T00:00:00.000Z",
+    "supplier": "BuyMore",
+    "ref": "",
+    "payment": "cash",
+    "notes": "",
+    "items": [
+      {
+        "id": "id_pbctina",
+        "sku": "ITEM0003",
+        "name": "4GB RAM DDR4",
+        "qty": 12,
+        "costPrice": 1500,
+        "retailPrice": 2000,
+        "supplierSerial": "1324 3253 3543 43643 43643",
+        "isNewProduct": true
+      },
+      {
+        "id": "id_33gki95",
+        "sku": "ITEM0004",
+        "name": "4GB RAM DDR3",
+        "qty": 12,
+        "costPrice": 1000,
+        "retailPrice": 1500,
+        "supplierSerial": "12134 24242 52525",
+        "isNewProduct": true
+      }
+    ],
+    "totalCost": 30000,
+    "status": "completed"
+  },
+  {
+    "id": "PO_1775624680400",
+    "date": "2026-04-08T00:00:00.000Z",
+    "supplier": "BuyMore",
+    "ref": "",
+    "payment": "cash",
+    "notes": "",
+    "items": [
+      {
+        "id": "id_x2wymge",
+        "sku": "ITEM0005",
+        "name": "CMOS BATTERY",
+        "qty": 100,
+        "costPrice": 100,
+        "retailPrice": 150,
+        "supplierSerial": "",
+        "isNewProduct": true
+      }
+    ],
+    "totalCost": 10000,
+    "status": "completed"
+  },
+  {
+    "id": "PO_1776856636849",
+    "date": "2026-04-22T00:00:00.000Z",
+    "supplier": "BuyMore",
+    "ref": "",
+    "payment": "cash",
+    "notes": "",
+    "items": [
+      {
+        "id": "id_ghtd27k",
+        "sku": "ITEM0006",
+        "name": "1TB HARD DISK",
+        "qty": 20,
+        "costPrice": 10000,
+        "retailPrice": 10300,
+        "supplierSerial": "",
+        "isNewProduct": true
+      },
+      {
+        "id": "id_0pulbdl",
+        "sku": "ITEM0007",
+        "name": "500GB HARD DISK",
+        "qty": 20,
+        "costPrice": 9000,
+        "retailPrice": 9400,
+        "supplierSerial": "",
+        "isNewProduct": true
+      }
+    ],
+    "totalCost": 380000,
+    "status": "completed"
+  }
+]

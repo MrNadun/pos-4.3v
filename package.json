@@ -1,0 +1,27 @@
+{
+  "name": "sd-pos",
+  "version": "1.0.0",
+  "description": "SD POS — smart Point of Sale system with WhatsApp invoicing & AI sales assistant",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "postinstall": "node -e \"if(!process.env.PUPPETEER_SKIP_DOWNLOAD && !process.env.PUPPETEER_EXECUTABLE_PATH && !process.env.GOOGLE_CHROME_BIN){try{require('child_process').execSync('npx puppeteer browsers install chrome',{stdio:'inherit'})}catch(e){console.log('Chrome auto-install failed — set PUPPETEER_EXECUTABLE_PATH manually')}}\""
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "archiver": "^7.0.1",
+    "express": "^5.2.1",
+    "fuse.js": "^7.3.0",
+    "node-cron": "^4.2.1",
+    "pdfkit": "^0.18.0",
+    "puppeteer": "^24.40.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "unzipper": "^0.12.3"
+  }
+}

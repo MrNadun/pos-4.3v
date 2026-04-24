@@ -1,0 +1,45 @@
+[
+  {
+    "id": "usr_admin",
+    "username": "admin",
+    "password": "admin123",
+    "role": "admin",
+    "permissions": [
+      "products",
+      "billing",
+      "customers",
+      "invoices",
+      "expenses",
+      "purchasing",
+      "analytics",
+      "settings"
+    ],
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_mo85lfvrhvp9",
+    "username": "Cashiyer",
+    "password": "1234",
+    "role": "cashier",
+    "permissions": [
+      "billing",
+      "customers",
+      "invoices",
+      "analytics"
+    ],
+    "createdAt": "2026-04-21T04:58:34.023Z"
+  },
+  {
+    "id": "usr_mo85yi9mvgfr",
+    "username": "stock keeper",
+    "password": "12345",
+    "role": "custom",
+    "permissions": [
+      "products",
+      "expenses",
+      "purchasing",
+      "analytics"
+    ],
+    "createdAt": "2026-04-21T05:08:43.642Z"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "SD POS",
+  "description": "Smart Point of Sale system with WhatsApp invoicing & AI sales assistant",
+  "repository": "https://github.com/your-username/sd-pos",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["pos", "whatsapp", "invoice", "express", "node"],
+  "stack": "container",
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    },
+    "PUPPETEER_SKIP_DOWNLOAD": {
+      "description": "Skip Chrome download — Dockerfile installs system chromium",
+      "value": "true"
+    },
+    "PUPPETEER_EXECUTABLE_PATH": {
+      "description": "Path to chromium inside the container",
+      "value": "/usr/bin/chromium"
+    }
+  }
+}

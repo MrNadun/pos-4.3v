@@ -1,0 +1,37 @@
+[
+  {
+    "id": "id_jma3913",
+    "name": "Nadun Navodya",
+    "email": "nadunnawodya058@gmail.com",
+    "phone": "+94 76 040 5102",
+    "address": "",
+    "createdAt": "2026-04-07T03:52:57.393Z"
+  },
+  {
+    "id": "id_woia76t",
+    "name": "Mahesh chamara",
+    "email": "chamara@gmail.com",
+    "phone": "+94 77 650 1490",
+    "address": "",
+    "createdAt": "2026-04-07T03:57:49.192Z"
+  },
+  {
+    "id": "id_avv3s93",
+    "name": "kokila",
+    "email": "",
+    "phone": "+94 76 989 3057",
+    "address": "p",
+    "createdAt": "2026-04-10T04:03:56.179Z"
+  },
+  {
+    "id": "id_inha5qd",
+    "name": "Nadun",
+    "email": "nadunnawodya058@gmail.com",
+    "phone": "+94 78 135 2903",
+    "address": "",
+    "tags": [
+      "VIP"
+    ],
+    "createdAt": "2026-04-23T10:11:14.747Z"
+  }
+]
