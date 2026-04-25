@@ -1,0 +1,1415 @@
+{
+  "app": "SD POS",
+  "version": 1,
+  "createdAt": "2026-04-25T21:30:00.019Z",
+  "redacted": true,
+  "note": "Secret values (API keys, tokens, passwords) have been redacted before upload. Restore them from your secure store or .env after restoring.",
+  "files": {
+    "categories.json": [
+      "General",
+      "Electronics",
+      "Accessories",
+      "Software",
+      "Services"
+    ],
+    "customers.json": [
+      {
+        "id": "id_jma3913",
+        "name": "Nadun Navodya",
+        "email": "nadunnawodya058@gmail.com",
+        "phone": "+94 76 040 5102",
+        "address": "",
+        "createdAt": "2026-04-07T03:52:57.393Z"
+      },
+      {
+        "id": "id_woia76t",
+        "name": "Mahesh chamara",
+        "email": "chamara@gmail.com",
+        "phone": "+94 77 650 1490",
+        "address": "",
+        "createdAt": "2026-04-07T03:57:49.192Z"
+      },
+      {
+        "id": "id_avv3s93",
+        "name": "kokila",
+        "email": "",
+        "phone": "+94 76 989 3057",
+        "address": "p",
+        "createdAt": "2026-04-10T04:03:56.179Z"
+      },
+      {
+        "id": "id_inha5qd",
+        "name": "Nadun",
+        "email": "nadunnawodya058@gmail.com",
+        "phone": "+94 78 135 2903",
+        "address": "",
+        "tags": [
+          "VIP"
+        ],
+        "createdAt": "2026-04-23T10:11:14.747Z"
+      },
+      {
+        "id": "id_sutdm7l",
+        "name": "Manusha Nirmal",
+        "email": "manusha@gmail.com",
+        "phone": "+94 70 512 2425",
+        "address": "",
+        "tags": [
+          "best"
+        ],
+        "createdAt": "2026-04-25T03:57:46.520Z"
+      }
+    ],
+    "discounts.json": [],
+    "expenses.json": [],
+    "invoices.json": [
+      {
+        "id": "INV_1775534005233",
+        "date": "2026-04-07T03:53:25.233Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "12424",
+            "lineTotal": 1300
+          }
+        ],
+        "subtotal": 1300,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1300,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV_1775534304184",
+        "date": "2026-04-07T03:58:24.184Z",
+        "customer": "id_woia76t",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 3,
+            "serialNo": "12134",
+            "lineTotal": 1261
+          }
+        ],
+        "subtotal": 1300,
+        "itemDiscountTotal": 39,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1261,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV_1775617954407",
+        "date": "2026-04-08T03:12:34.407Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "4647",
+            "lineTotal": 2000
+          },
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "33533",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 3500,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 3500,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "REC_1775619016023",
+        "date": "2026-04-08T03:30:16.023Z",
+        "customer": "id_jma3913",
+        "docType": "receipt",
+        "items": [
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "4656",
+            "lineTotal": 2000
+          }
+        ],
+        "subtotal": 2000,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 2000,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "REC_1775624702152",
+        "date": "2026-04-08T05:05:02.152Z",
+        "customer": "id_jma3913",
+        "docType": "receipt",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "REC_1775636136886",
+        "date": "2026-04-08T08:15:36.886Z",
+        "customer": "id_jma3913",
+        "docType": "receipt",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0001",
+        "date": "2026-04-09T05:56:41.414Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_30yxonb",
+            "sku": "ITEM0002",
+            "name": "i3 2nd gen cpu",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "2343",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 1500,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1500,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0002",
+        "date": "2026-04-09T08:48:42.523Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "price": 1500,
+            "qty": 4,
+            "discountPct": 0,
+            "serialNo": "12131 2424 3454 3533",
+            "lineTotal": 6000
+          }
+        ],
+        "subtotal": 6000,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 6000,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0003",
+        "date": "2026-04-09T08:50:07.859Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "3536",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 1500,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1500,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0004",
+        "date": "2026-04-09T09:11:25.492Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0005",
+        "date": "2026-04-09T09:15:39.676Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0006",
+        "date": "2026-04-09T09:41:37.012Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "1321",
+            "lineTotal": 1300
+          }
+        ],
+        "subtotal": 1300,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1300,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0007",
+        "date": "2026-04-09T09:45:24.580Z",
+        "customer": "id_woia76t",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          },
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "1213",
+            "lineTotal": 2000
+          },
+          {
+            "id": "id_30yxonb",
+            "sku": "ITEM0002",
+            "name": "i3 2nd gen cpu",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 3650,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 3650,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0008",
+        "date": "2026-04-09T09:51:30.156Z",
+        "customer": "id_woia76t",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "21324",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 1500,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1500,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0009",
+        "date": "2026-04-09T10:03:44.629Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "4647",
+            "lineTotal": 1300
+          }
+        ],
+        "subtotal": 1300,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1300,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0010",
+        "date": "2026-04-09T11:12:34.126Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          },
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "2324",
+            "lineTotal": 2000
+          },
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "3535",
+            "lineTotal": 1500
+          },
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 3,
+            "serialNo": "",
+            "lineTotal": 1261
+          }
+        ],
+        "subtotal": 4950,
+        "itemDiscountTotal": 39,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 4911,
+        "paymentMethod": "card",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0011",
+        "date": "2026-04-10T04:02:44.604Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "5454",
+            "lineTotal": 1300
+          },
+          {
+            "id": "id_30yxonb",
+            "sku": "ITEM0002",
+            "name": "i3 2nd gen cpu",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 50,
+            "serialNo": "0124245",
+            "lineTotal": 750
+          }
+        ],
+        "subtotal": 2800,
+        "itemDiscountTotal": 750,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 2050,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0012",
+        "date": "2026-04-10T04:04:09.691Z",
+        "customer": "id_avv3s93",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "15244",
+            "lineTotal": 2000
+          }
+        ],
+        "subtotal": 2000,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 2000,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0013",
+        "date": "2026-04-17T02:27:15.680Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1300
+          }
+        ],
+        "subtotal": 1300,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1300,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0014",
+        "date": "2026-04-17T02:31:48.472Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0015",
+        "date": "2026-04-21T04:46:56.321Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0016",
+        "date": "2026-04-21T09:35:33.708Z",
+        "customer": "id_woia76t",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "1242",
+            "lineTotal": 150
+          },
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 2000
+          }
+        ],
+        "subtotal": 2150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 2150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "REC-0017",
+        "date": "2026-04-21T09:46:07.339Z",
+        "customer": "id_jma3913",
+        "docType": "receipt",
+        "items": [
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "2425",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 1500,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1500,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0018",
+        "date": "2026-04-21T09:54:44.018Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "24353",
+            "lineTotal": 2000
+          }
+        ],
+        "subtotal": 2000,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 2000,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0019",
+        "date": "2026-04-22T03:13:02.699Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "price": 1300,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "4647",
+            "lineTotal": 1300
+          }
+        ],
+        "subtotal": 1300,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1300,
+        "paymentMethod": "card",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0020",
+        "date": "2026-04-22T08:31:05.494Z",
+        "customer": "id_avv3s93",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_30yxonb",
+            "sku": "ITEM0002",
+            "name": "i3 2nd gen cpu",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1500
+          },
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "price": 2000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "35363",
+            "lineTotal": 2000
+          }
+        ],
+        "subtotal": 3500,
+        "itemDiscountTotal": 0,
+        "discountPct": 2,
+        "discountAmt": 70,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 3430,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0021",
+        "date": "2026-04-22T08:32:08.038Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_30yxonb",
+            "sku": "ITEM0002",
+            "name": "i3 2nd gen cpu",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "13141",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 1500,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1500,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0022",
+        "date": "2026-04-22T11:37:43.135Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_3bbc4sd",
+            "sku": "ITEM0009",
+            "name": "WINDOWS 11 INSTALLED",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1500
+          },
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          },
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "21314",
+            "lineTotal": 1500
+          },
+          {
+            "id": "id_ghtd27k",
+            "sku": "ITEM0006",
+            "name": "1TB HARD DISK",
+            "price": 10300,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "235336",
+            "lineTotal": 10300
+          }
+        ],
+        "subtotal": 13450,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 13450,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0023",
+        "date": "2026-04-23T03:51:22.195Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 150,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "REC-0024",
+        "date": "2026-04-23T03:54:59.414Z",
+        "customer": "id_jma3913",
+        "docType": "receipt",
+        "items": [
+          {
+            "id": "id_3bbc4sd",
+            "sku": "ITEM0009",
+            "name": "WINDOWS 11 INSTALLED",
+            "price": 1500,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1500
+          }
+        ],
+        "subtotal": 1500,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1500,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0025",
+        "date": "2026-04-23T04:06:30.267Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_pgq5dta",
+            "sku": "ITEM0008",
+            "name": "WINDOWS 10 INSTALLED",
+            "price": 1000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1000
+          }
+        ],
+        "subtotal": 1000,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1000,
+        "paymentMethod": "cash",
+        "status": "completed"
+      },
+      {
+        "id": "INV-0026",
+        "date": "2026-04-23T10:12:14.180Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_pgq5dta",
+            "sku": "ITEM0008",
+            "name": "WINDOWS 10 INSTALLED",
+            "price": 1000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1000
+          },
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "price": 150,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 150
+          }
+        ],
+        "subtotal": 1150,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1150,
+        "paymentMethod": "cash",
+        "status": "completed",
+        "soldBy": "Cashiyer"
+      },
+      {
+        "id": "INV-0027",
+        "date": "2026-04-23T12:03:25.846Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_pgq5dta",
+            "sku": "ITEM0008",
+            "name": "WINDOWS 10 INSTALLED",
+            "price": 1000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1000
+          },
+          {
+            "id": "id_0pulbdl",
+            "sku": "ITEM0007",
+            "name": "500GB HARD DISK",
+            "price": 9400,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "36364",
+            "lineTotal": 9400
+          }
+        ],
+        "subtotal": 10400,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 10400,
+        "paymentMethod": "cash",
+        "status": "completed",
+        "soldBy": "admin"
+      },
+      {
+        "id": "INV-0028",
+        "date": "2026-04-24T06:25:50.337Z",
+        "customer": "id_jma3913",
+        "docType": "invoice",
+        "items": [
+          {
+            "id": "id_pgq5dta",
+            "sku": "ITEM0008",
+            "name": "WINDOWS 10 INSTALLED",
+            "price": 1000,
+            "qty": 1,
+            "discountPct": 0,
+            "serialNo": "",
+            "lineTotal": 1000
+          }
+        ],
+        "subtotal": 1000,
+        "itemDiscountTotal": 0,
+        "discountPct": 0,
+        "discountAmt": 0,
+        "taxPct": 0,
+        "taxAmt": 0,
+        "total": 1000,
+        "paymentMethod": "cash",
+        "status": "completed",
+        "soldBy": "admin"
+      }
+    ],
+    "products.json": [
+      {
+        "id": "id_9hfm6ll",
+        "sku": "ITEM0001",
+        "name": "i5 4th gen cpu",
+        "category": "Accessories",
+        "price": 1300,
+        "stock": 6,
+        "code": "ITEM0001"
+      },
+      {
+        "id": "id_30yxonb",
+        "sku": "ITEM0002",
+        "name": "i3 2nd gen cpu",
+        "category": "Accessories",
+        "price": 1500,
+        "stock": 9,
+        "code": "ITEM0002"
+      },
+      {
+        "id": "id_pbctina",
+        "sku": "ITEM0003",
+        "name": "4GB RAM DDR4",
+        "category": "Electronics",
+        "price": 2000,
+        "stock": 4,
+        "code": "ITEM0003"
+      },
+      {
+        "id": "id_33gki95",
+        "sku": "ITEM0004",
+        "name": "4GB RAM DDR3",
+        "category": "Electronics",
+        "price": 1500,
+        "stock": 2,
+        "code": "ITEM0004"
+      },
+      {
+        "id": "id_x2wymge",
+        "sku": "ITEM0005",
+        "name": "CMOS BATTERY",
+        "category": "General",
+        "price": 150,
+        "stock": 88,
+        "code": "ITEM0005"
+      },
+      {
+        "id": "id_ghtd27k",
+        "sku": "ITEM0006",
+        "name": "1TB HARD DISK",
+        "category": "Accessories",
+        "price": 10300,
+        "stock": 19,
+        "code": "ITEM0006"
+      },
+      {
+        "id": "id_0pulbdl",
+        "sku": "ITEM0007",
+        "name": "500GB HARD DISK",
+        "category": "Accessories",
+        "price": 9400,
+        "stock": 19,
+        "code": "ITEM0007"
+      },
+      {
+        "id": "id_pgq5dta",
+        "sku": "ITEM0008",
+        "name": "WINDOWS 10 INSTALLED",
+        "price": 1000,
+        "stock": 996,
+        "category": "Software",
+        "code": "ITEM0008"
+      },
+      {
+        "id": "id_3bbc4sd",
+        "sku": "ITEM0009",
+        "name": "WINDOWS 11 INSTALLED",
+        "price": 1500,
+        "stock": 98,
+        "category": "Software",
+        "code": "ITEM0009"
+      }
+    ],
+    "purchasing.json": [
+      {
+        "id": "PO_1775386298990",
+        "date": "2026-04-05T00:00:00.000Z",
+        "supplier": "BuyMore",
+        "ref": "",
+        "payment": "cash",
+        "notes": "",
+        "items": [
+          {
+            "id": "id_9hfm6ll",
+            "sku": "ITEM0001",
+            "name": "i5 4th gen cpu",
+            "qty": 14,
+            "costPrice": 1200,
+            "retailPrice": 1300,
+            "supplierSerial": "",
+            "isNewProduct": true
+          },
+          {
+            "id": "id_30yxonb",
+            "sku": "ITEM0002",
+            "name": "i3 2nd gen cpu",
+            "qty": 14,
+            "costPrice": 1000,
+            "retailPrice": 1500,
+            "supplierSerial": "",
+            "isNewProduct": true
+          }
+        ],
+        "totalCost": 30800,
+        "status": "completed"
+      },
+      {
+        "id": "PO_1775617907559",
+        "date": "2026-04-08T00:00:00.000Z",
+        "supplier": "BuyMore",
+        "ref": "",
+        "payment": "cash",
+        "notes": "",
+        "items": [
+          {
+            "id": "id_pbctina",
+            "sku": "ITEM0003",
+            "name": "4GB RAM DDR4",
+            "qty": 12,
+            "costPrice": 1500,
+            "retailPrice": 2000,
+            "supplierSerial": "1324 3253 3543 43643 43643",
+            "isNewProduct": true
+          },
+          {
+            "id": "id_33gki95",
+            "sku": "ITEM0004",
+            "name": "4GB RAM DDR3",
+            "qty": 12,
+            "costPrice": 1000,
+            "retailPrice": 1500,
+            "supplierSerial": "12134 24242 52525",
+            "isNewProduct": true
+          }
+        ],
+        "totalCost": 30000,
+        "status": "completed"
+      },
+      {
+        "id": "PO_1775624680400",
+        "date": "2026-04-08T00:00:00.000Z",
+        "supplier": "BuyMore",
+        "ref": "",
+        "payment": "cash",
+        "notes": "",
+        "items": [
+          {
+            "id": "id_x2wymge",
+            "sku": "ITEM0005",
+            "name": "CMOS BATTERY",
+            "qty": 100,
+            "costPrice": 100,
+            "retailPrice": 150,
+            "supplierSerial": "",
+            "isNewProduct": true
+          }
+        ],
+        "totalCost": 10000,
+        "status": "completed"
+      },
+      {
+        "id": "PO_1776856636849",
+        "date": "2026-04-22T00:00:00.000Z",
+        "supplier": "BuyMore",
+        "ref": "",
+        "payment": "cash",
+        "notes": "",
+        "items": [
+          {
+            "id": "id_ghtd27k",
+            "sku": "ITEM0006",
+            "name": "1TB HARD DISK",
+            "qty": 20,
+            "costPrice": 10000,
+            "retailPrice": 10300,
+            "supplierSerial": "",
+            "isNewProduct": true
+          },
+          {
+            "id": "id_0pulbdl",
+            "sku": "ITEM0007",
+            "name": "500GB HARD DISK",
+            "qty": 20,
+            "costPrice": 9000,
+            "retailPrice": 9400,
+            "supplierSerial": "",
+            "isNewProduct": true
+          }
+        ],
+        "totalCost": 380000,
+        "status": "completed"
+      }
+    ],
+    "settings.json": {
+      "businessName": "SD COMPUTERS",
+      "appTagline": "smart computer store",
+      "businessAddress": "88V3+78G, Polgahawela",
+      "businessPhone": "+94 76 989 3057",
+      "businessEmail": "sdcomputers@gmail.com",
+      "timezone": "Asia/Colombo",
+      "currencySymbol": "Rs",
+      "currencyCode": "LKR",
+      "currencyLocale": "si-LK",
+      "invoiceHeaderColor": "#1a3a5c",
+      "invoiceFooter": "Thank you for your purchase!",
+      "invoiceWatermark": "Verified Invoice",
+      "invoiceShowQR": true,
+      "invoiceShowLogo": true,
+      "termsAndConditions": [
+        "All invoices must be settled within 5 days from the invoice date.",
+        "Late payments may incur interest or penalties as permitted by law."
+      ],
+      "receiptHeaderColor": "#1a3a5c",
+      "receiptFooter": "Thank you! Please come again.",
+      "receiptNote": "",
+      "receiptShowTax": true,
+      "receiptShowDiscount": true,
+      "defaultTaxPercent": 0,
+      "lowStockThreshold": 5,
+      "appName": "SD POS",
+      "chatbotApiUrl": "https://rest-api-ebon-three.vercel.app/ai/openai?text=",
+      "mistralApiKey": "***REDACTED***",
+      "mistralModel": "meta/llama-3.1-8b-instruct",
+      "aiFallbackEnabled": true,
+      "githubBackupEnabled": true,
+      "githubToken": "***REDACTED***",
+      "githubRepo": "https://github.com/MrNadun/pos-4.3v",
+      "githubBranch": "main",
+      "githubBackupSchedule": "0 3 * * *",
+      "githubBackupTimezone": "Asia/Colombo"
+    },
+    "users.json": [
+      {
+        "id": "usr_admin",
+        "username": "admin",
+        "password": "***REDACTED***",
+        "role": "admin",
+        "permissions": [
+          "products",
+          "billing",
+          "customers",
+          "invoices",
+          "expenses",
+          "purchasing",
+          "analytics",
+          "settings"
+        ],
+        "createdAt": "2026-01-01T00:00:00.000Z"
+      },
+      {
+        "id": "usr_mo85lfvrhvp9",
+        "username": "Cashiyer",
+        "password": "***REDACTED***",
+        "role": "cashier",
+        "permissions": [
+          "billing",
+          "customers",
+          "invoices",
+          "analytics"
+        ],
+        "createdAt": "2026-04-21T04:58:34.023Z"
+      },
+      {
+        "id": "usr_mo85yi9mvgfr",
+        "username": "stock keeper",
+        "password": "***REDACTED***",
+        "role": "custom",
+        "permissions": [
+          "products",
+          "expenses",
+          "purchasing",
+          "analytics"
+        ],
+        "createdAt": "2026-04-21T05:08:43.642Z"
+      }
+    ]
+  }
+}
