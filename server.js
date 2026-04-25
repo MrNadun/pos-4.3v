@@ -1188,18 +1188,72 @@ function loadSettings() {
 let lastGithubBackup = { status: "never", time: null, file: null, sha: null, error: null };
 let githubCronJob = null;
 
+// Keys whose values must NEVER be committed to GitHub (secret scanning
+// will otherwise reject the push with "Repository rule violations found").
+const BACKUP_REDACT_KEYS = new Set([
+  "githubToken",
+  "mistralApiKey",
+  "openaiApiKey",
+  "anthropicApiKey",
+  "geminiApiKey",
+  "groqApiKey",
+  "twilioAuthToken",
+  "twilioAccountSid",
+  "stripeSecretKey",
+  "dropboxToken",
+  "dropboxRefreshToken",
+  "dropboxAppSecret",
+  "smtpPassword",
+  "sessionSecret",
+  "jwtSecret",
+  "apiKey",
+  "secret",
+  "password",
+  "token",
+  "accessToken",
+  "refreshToken",
+  "privateKey",
+]);
+
+function isLikelySecretValue(v) {
+  if (typeof v !== "string" || v.length < 20) return false;
+  // Common API key prefixes
+  return /^(sk-|pk_|nvapi-|AIza|ghp_|github_pat_|xox[abp]-|gho_|ghu_|ghs_|ghr_|AKIA|ASIA|hf_)/.test(v);
+}
+
+function redactSecrets(value) {
+  if (Array.isArray(value)) return value.map(redactSecrets);
+  if (value && typeof value === "object") {
+    const out = {};
+    for (const [k, v] of Object.entries(value)) {
+      if (BACKUP_REDACT_KEYS.has(k) && v) {
+        out[k] = "***REDACTED***";
+      } else if (typeof v === "string" && isLikelySecretValue(v)) {
+        out[k] = "***REDACTED***";
+      } else {
+        out[k] = redactSecrets(v);
+      }
+    }
+    return out;
+  }
+  return value;
+}
+
 function buildBackupSnapshotJson() {
   const dbFiles = fs.readdirSync(DB).filter((f) => f.endsWith(".json"));
   const snapshot = {
     app: "SD POS",
     version: 1,
     createdAt: new Date().toISOString(),
+    redacted: true,
+    note: "Secret values (API keys, tokens, passwords) have been redacted before upload. Restore them from your secure store or .env after restoring.",
     files: {},
   };
   for (const f of dbFiles) {
     try {
       const content = fs.readFileSync(path.join(DB, f), "utf8");
-      snapshot.files[f] = JSON.parse(content);
+      const parsed = JSON.parse(content);
+      snapshot.files[f] = redactSecrets(parsed);
     } catch (e) {
       snapshot.files[f] = { _error: e.message };
     }
@@ -1328,12 +1382,28 @@ async function githubBackupRestore(filePath) {
     const parsed = JSON.parse(decoded);
     if (!parsed.files || typeof parsed.files !== "object") throw new Error("Invalid backup format");
 
+    // Merge: restore non-secret data, but preserve any *currently saved* secret
+    // values rather than overwriting them with "***REDACTED***" placeholders.
+    let preservedSecrets = 0;
     for (const [fname, data] of Object.entries(parsed.files)) {
       const target = path.join(DB, fname);
-      fs.writeFileSync(target, JSON.stringify(data, null, 2), "utf8");
+      let merged = data;
+      if (data && typeof data === "object" && !Array.isArray(data) && fs.existsSync(target)) {
+        try {
+          const current = JSON.parse(fs.readFileSync(target, "utf8"));
+          merged = { ...data };
+          for (const [k, v] of Object.entries(data)) {
+            if (v === "***REDACTED***" && current[k] && current[k] !== "***REDACTED***") {
+              merged[k] = current[k];
+              preservedSecrets++;
+            }
+          }
+        } catch { /* fall through to plain restore */ }
+      }
+      fs.writeFileSync(target, JSON.stringify(merged, null, 2), "utf8");
     }
-    console.log(`♻️  Restored ${Object.keys(parsed.files).length} files from ${filePath}`);
-    return { ok: true, filesRestored: Object.keys(parsed.files).length };
+    console.log(`♻️  Restored ${Object.keys(parsed.files).length} files from ${filePath}` + (preservedSecrets ? ` (${preservedSecrets} secret(s) preserved)` : ""));
+    return { ok: true, filesRestored: Object.keys(parsed.files).length, secretsPreserved: preservedSecrets };
   } catch (err) {
     try { restoreSnapshot(currentSnapshot); } catch (e) { console.error("Rollback failed:", e.message); }
     throw err;
